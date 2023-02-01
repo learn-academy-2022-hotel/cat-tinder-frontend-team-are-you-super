@@ -1,14 +1,14 @@
 import React from 'react';
-
+import marvelPage from "../assets/marvelPage.png"
 
 const NotFound = () => {
   return (
     <>
-    {/* <div style={{ backgroundImage: 'url(/marvelPage.png)' }}>
-
-    </div> */}
-    <h1>404</h1>
-    <h1>This website cannot be found</h1>
+        <img 
+            src={marvelPage}
+            alt="404 page with Captain America"
+            className="marvel-page"
+        />
     </>
   );
 }
