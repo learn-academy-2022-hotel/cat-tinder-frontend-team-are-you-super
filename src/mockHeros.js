@@ -4,7 +4,7 @@ const heros = [
         name: 'Wonder Woman',
         super_power: 'Super-strength, Agility, and Flight',
         enjoys: 'Bringing peace and harmony to the entire universe.',
-        image: 'https://static.wikia.nocookie.net/dccu/images/6/6f/JL_Wonder_Woman.jpg/revision/latest?cb=20160914003449'
+        image: 'https://people.com/thmb/O4au7o8qtmbV9qC2SMQfPm7rg6k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(675x379:677x381)/gal-gadot-2000-f893bc7afe9b44be91663eb17cc17750.jpg'
     },
     {
         id: 2,

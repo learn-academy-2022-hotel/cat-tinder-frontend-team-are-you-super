@@ -2,10 +2,13 @@
   text-align: center;
 }
 
-h1, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6, p, a {
   font-family: 'Bangers', cursive;
 }
 
+h3 {
+  text-align: center;
+}
 .marvel-page {
   height: 100%;
   width: 100%;
@@ -25,12 +28,52 @@ h1, h3, h4, h5, h6, p, a {
 .footer {
   background-color: #1d263b;
   color: red;
-  height: 2rem;
+  height: 1.5rem;
   width: 100%;
   flex-direction: row;
   justify-content: space-around;
   display: flex;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 
+body {
+  background-color: #1d263b;
+  color: white;
+  /* min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column; */
+}
+
+.index-image {
+  height: 260px;
+}
+
+.index-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
+
+.index-button {
+  display: flex;
+  justify-content: center;
+  margin: auto
+  }
+
+.Hero-show-img {
+  height: 500px;
+  width: 400px;
+
+}
+
+.hero-info {
+ /* margin-left: auto; */
+}
+
+.hero-show-cards {
+  display:flex;
+  justify-content: space-around;
+
+}
