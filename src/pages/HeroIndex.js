@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, CardBody, CardTitle, CardSubtitle, CardText, Button } from "reactstrap"
+import { Card, CardBody, CardTitle, CardSubtitle, CardText, Button} from "reactstrap"
+import { NavLink } from 'react-router-dom';
 
 const HeroIndex = ({ heros }) => {
   return (
@@ -14,15 +15,9 @@ const HeroIndex = ({ heros }) => {
               <CardTitle tag="h3">
                 {hero.name}
               </CardTitle>
-              {/* <CardSubtitle className="mb-2 text-muted" tag="h6">
-                SuperPower:
-              </CardSubtitle>
-              <CardText>
-                {hero.super_power}
-              </CardText> */}
-              <Button className="index-button">
+              <NavLink to={`/heroshow/${hero.id}`} className="index-button">
                 About Me
-              </Button>
+              </NavLink>
             </CardBody>
           </Card>
         )

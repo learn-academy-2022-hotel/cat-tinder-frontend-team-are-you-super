@@ -67,11 +67,6 @@ body {
   width: 400px;
 
 }
-
-.hero-info {
- /* margin-left: auto; */
-}
-
 .hero-show-cards {
   display:flex;
   justify-content: space-around;
