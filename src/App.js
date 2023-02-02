@@ -15,7 +15,6 @@ const App = () => {
 
   const [mockHero, setMockHero] = useState(mockHeros)
 
-  console.log(mockHero);
 
   return (
     <>
