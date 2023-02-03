@@ -59,16 +59,43 @@ body {
 .index-button {
   display: flex;
   justify-content: center;
-  margin: auto
+  margin: auto;
+  color: white;
   }
+.index-about-me {
+  color: white;
+
+}
 
 .Hero-show-img {
   height: 500px;
   width: 400px;
-
+  margin-left: 40px;
 }
 .hero-show-cards {
   display:flex;
-  justify-content: space-around;
+  justify-content:space-around;
+}
+.hero-info {
+  margin-left: 40px;
+  margin-right: 50px;
+}
 
+span {
+ font-size: 30px
+}
+
+.show-name {
+  font-size: 60px
+}
+
+.show-button {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.new-header {
+  color:#ffc001;
+  text-align:center;
+  font-size: 50px;
 }

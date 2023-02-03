@@ -15,7 +15,10 @@ describe("<HeroIndex />", () => {
     })
   it("renders hero cards", () => {
   const div = document.createElement("div")
-  render(<HeroIndex heros={mockHeros} />, div)
+  render(
+    <BrowserRouter>
+      <HeroIndex heros={mockHeros} />
+    </BrowserRouter>, div)
   mockHeros.forEach(hero => {
     const heroName = screen.getByText(hero.name)
     expect(heroName).toBeInTheDocument()

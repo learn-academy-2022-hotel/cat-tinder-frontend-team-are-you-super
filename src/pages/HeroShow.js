@@ -15,13 +15,13 @@ const HeroShow = ({ heros }) => {
           className="Hero-show-img"
         />
         <div className="hero-info">
-          <h2 style={{color:"#ffc001"}}>Hero Information:</h2>
+          <h1 style={{color:"#ffc001"}}>Hero Information:</h1>
           <br></br>
-          <h1 style={{color:"red"}}> <span style={{color:"#ffc001"}}>NAME: </span>{currentHero.name}</h1>
+          <h1 className="show-name" style={{color:"red"}}> <span style={{color:"#ffc001"}}>NAME: </span>{currentHero.name}</h1>
           <br></br>
-          <h4><span style={{color:"#ffc001"}}>Powers: </span>{currentHero.super_power}</h4>
+          <h1><span style={{color:"#ffc001"}}>Powers: </span>{currentHero.super_power}</h1>
           <br></br>
-          <h4><span style={{color:"#ffc001"}}>Enjoys: </span>{currentHero.enjoys}</h4>
+          <h1><span style={{color:"#ffc001"}}>Enjoys: </span>{currentHero.enjoys}</h1>
         </div>
       </>
     )}

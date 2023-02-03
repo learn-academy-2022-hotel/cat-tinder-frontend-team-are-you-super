@@ -15,6 +15,9 @@ const App = () => {
 
   const [heros, setHeros] = useState(mockHeros)
 
+  const createNewHero = (newHeroObject) => {
+    console.log(newHeroObject)
+  }
 
   return (
     <>
@@ -23,7 +26,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/heroindex" element={<HeroIndex heros={heros} />} />
           <Route path="/heroshow/:id" element={<HeroShow heros={heros} />} />
-          <Route path="/heronew" element={<HeroNew />} />
+          <Route path="/heronew" element={<HeroNew createNewHero={createNewHero} />} />
           <Route path="/heroedit" element={<HeroEdit />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
