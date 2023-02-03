@@ -13,7 +13,7 @@ import { Routes, Route } from "react-router-dom"
 
 const App = () => {
 
-  const [mockHero, setMockHero] = useState(mockHeros)
+  const [heros, setHeros] = useState(mockHeros)
 
 
   return (
@@ -21,8 +21,8 @@ const App = () => {
       <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/heroindex" element={<HeroIndex />} />
-          <Route path="/heroshow" element={<HeroShow />} />
+          <Route path="/heroindex" element={<HeroIndex heros={heros} />} />
+          <Route path="/heroshow/:id" element={<HeroShow heros={heros} />} />
           <Route path="/heronew" element={<HeroNew />} />
           <Route path="/heroedit" element={<HeroEdit />} />
           <Route path="*" element={<NotFound />} />

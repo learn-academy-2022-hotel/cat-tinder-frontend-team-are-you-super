@@ -9,7 +9,7 @@ const Header = () => {
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
     </style>
-    <Nav className="header-nav" class="navbar navbar-dark bg-dark">
+    <Nav className="header-nav">
       <NavItem>
         <NavLink to="/">
           <img
@@ -20,13 +20,13 @@ const Header = () => {
         </NavLink>
       </NavItem>
       <NavItem>
-        <NavLink to="/heroindex" className="nav-link">
-          <a style={{color:"red"}}>Meet the Superheroes</a>
+        <NavLink to="/heroindex" className="nav-link" style={{color:"red"}}>
+          Meet the Superheroes
         </NavLink>
       </NavItem>
       <NavItem>
-        <NavLink to="/heronew" className="nav-link">
-        <a style={{color:"red"}}>Add a New Superhero</a>
+        <NavLink to="/heronew" className="nav-link" style={{color:"red"}}>
+          Add a New Superhero
         </NavLink>
       </NavItem>
     </Nav>
