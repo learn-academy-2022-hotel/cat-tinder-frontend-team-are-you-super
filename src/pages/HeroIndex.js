@@ -15,9 +15,11 @@ const HeroIndex = ({ heros }) => {
               <CardTitle tag="h3">
                 {hero.name}
               </CardTitle>
-              <NavLink to={`/heroshow/${hero.id}`} className="index-button">
-                About Me
-              </NavLink>
+              <Button color="danger" className="index-button">
+                <NavLink to={`/heroshow/${hero.id}`} className="index-about-me">
+                  About Me
+                </NavLink>
+              </Button>
             </CardBody>
           </Card>
         )
