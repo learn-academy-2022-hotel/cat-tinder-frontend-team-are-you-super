@@ -3,7 +3,7 @@ import React from 'react';
 const Home = () => {
   return (
     <>
-    <h1>This is the Home</h1>
+    <h1>Welcome to Are You Super, the exclusive dating app for SUPERHEROES.</h1>
     </>
   );
 }

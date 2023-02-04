@@ -19,6 +19,10 @@ const App = () => {
     console.log(newHeroObject)
   }
 
+  const updateHero = (hero, id) => {
+    console.log("hero:", hero)
+    console.log("id:", id)
+  }
   return (
     <>
       <Header />
@@ -27,7 +31,7 @@ const App = () => {
           <Route path="/heroindex" element={<HeroIndex heros={heros} />} />
           <Route path="/heroshow/:id" element={<HeroShow heros={heros} />} />
           <Route path="/heronew" element={<HeroNew createNewHero={createNewHero} />} />
-          <Route path="/heroedit" element={<HeroEdit />} />
+          <Route path="/heroedit/:id" element={<HeroEdit heros={heros} updateHero={updateHero} />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       <Footer />

@@ -1,36 +1,35 @@
 import React from 'react'
-import HeroNew from './HeroNew'
+import HeroEdit from './HeroEdit'
 import { BrowserRouter } from 'react-router-dom'
 import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
 
-
-describe("<HeroNew />", () => {
+describe("<HeroEdit />", () => {
     it("renders without crashing", () => {
         render(
             <BrowserRouter>
-                <HeroNew />
+                <HeroEdit />
             </BrowserRouter>
         )
     })
     it("Can see the title of the page", () => {
         render(
             <BrowserRouter>
-                <HeroNew />
+                <HeroEdit />
             </BrowserRouter>
         )
         screen.logTestingPlaygroundURL()
-        const element = screen.getByText("CREATE A NEW HERO")
+        const element = screen.getByText("EDIT A HERO")
         expect(element).toBeInTheDocument()
     })
     it("has a submit button", () => {
         render(
             <BrowserRouter>
-                <HeroNew />
+                <HeroEdit />
             </BrowserRouter>
         )
         const button = screen.getByRole('button', {
-            name: /submit hero profile/i
+            name: /Submit Updated Hero/i
           })
         expect(button).toBeInTheDocument()
     })

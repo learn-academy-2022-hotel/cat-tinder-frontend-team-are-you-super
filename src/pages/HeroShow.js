@@ -1,5 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import { Button } from 'reactstrap'
+import { NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const HeroShow = ({ heros }) => {
   const { id } = useParams()
@@ -22,7 +25,14 @@ const HeroShow = ({ heros }) => {
           <h1><span style={{color:"#ffc001"}}>Powers: </span>{currentHero.super_power}</h1>
           <br></br>
           <h1><span style={{color:"#ffc001"}}>Enjoys: </span>{currentHero.enjoys}</h1>
+          <br></br>
+          <Button color="danger" className="show-button">
+          <NavLink to={`/heroedit/${currentHero.id}`} className="show-edit-button">
+            Edit Hero Profile
+          </NavLink>
+          </Button>
         </div>
+
       </>
     )}
   </main>
