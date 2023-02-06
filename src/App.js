@@ -53,25 +53,13 @@ const App = () => {
       .catch((errors) => console.log("Cat create errors:", errors))
   }
 
-  deleteHero = (id) => {
-    fetch(`http://localhost:3000/heros/${id}`, {
-      headers: {
-        "Content-Type": "application/json"
-      },
-      method: "DELETE"
-    })
-      .then((response) => response.json())
-      .then((payload) => readHero())
-      .catch((errors) => console.log("Delete errors:", errors))
-  }
-
   return (
     <>
       <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/heroindex" element={<HeroIndex heros={heros} />} />
-          <Route path="/heroshow/:id" element={<HeroShow heros={heros} deleteHero={deleteHero}/>} />
+          <Route path="/heroshow/:id" element={<HeroShow heros={heros} />} />
           <Route path="/heronew" element={<HeroNew createNewHero={createNewHero} />} />
           <Route path="/heroedit/:id" element={<HeroEdit heros={heros} updateHero={updateHero} />} />
           <Route path="*" element={<NotFound />} />

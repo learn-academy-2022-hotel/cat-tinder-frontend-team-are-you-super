@@ -31,9 +31,6 @@ const HeroShow = ({ heros }) => {
             Edit Hero Profile
           </NavLink>
           </Button>
-          <NavLink to="/heroindex">
-            <Button>Delete Hero Profile</Button>
-          </NavLink>
         </div>
 
       </>
