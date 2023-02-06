@@ -57,10 +57,17 @@ body {
   justify-content: center;
   margin: auto;
   color: white;
+  
   }
+
+.index-about-me:hover {
+  color: #ffc001;
+}
+
+
 .index-about-me {
   color: white;
-
+  text-decoration: none;
 }
 
 .Hero-show-img {
@@ -90,6 +97,15 @@ span {
   justify-content: center;
   margin: auto;
 }
+
+.show-edit-button {
+  color: white;
+  text-decoration: none;
+}
+.show-edit-button:hover {
+  color: #ffc001;
+}
+
 .new-header {
   color:#ffc001;
   text-align:center;
